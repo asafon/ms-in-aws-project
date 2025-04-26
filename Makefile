@@ -25,7 +25,4 @@ deploy:
 	#deploy
 	#aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin some_url.us-east-1.amazonaws.com
 	#docker build -t fastapi-wiki .
-	#docker tag fastapi-wiki:latest 561744971673.dkr.ecr.us-east-1.amazonaws.com/fastapi-wiki:latest
-	#docker push 561744971673.dkr.ecr.us-east-1.amazonaws.com/fastapi-wiki:latest
-
 all: install post-install lint test deploy
